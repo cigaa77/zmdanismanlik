@@ -1,0 +1,122 @@
+<div class="container-fluid" style="background-color:rosybrown">
+    <div class="container nav" style="background-color:darksalmon">
+        <div>
+            <span class="fas fa-phone-volume"></span>
+            <span class="p-1">0 212 532 32 05</span>
+        </div>
+        <div>
+            <span class="fas fa-envelope ml-4"></span>
+            <span class="p-1">info@zmdanismanlik.com</span>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-brand">Zm Danışmanlık</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="anasayfa">Anasayfa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hakkımızda
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="kalite-politikası">Kalite Politikası</a>
+                        <a class="dropdown-item" routerLink="yonetmelikler">Yönetmelikler</a>
+                        <a class="dropdown-item" routerLink="belgelerimiz">Belgelerimiz</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hizmetlerimiz
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <span class="dropdown-header">İlaçlama, Haşere ve Kemirgen
+                            Hizmetleri</span>
+                        <span class="dropdown-item">Açık Alan ve Bahçe İlaçlama</span>
+                        <span class="dropdown-item">Ev İlaçlama</span>
+                        <span class="dropdown-item">Otel İlaçlama</span>
+                        <span class="dropdown-item">Hastane İlaçlama</span>
+                        <span class="dropdown-item">İşyeri-Şirket-Ofis İlaçlama</span>
+                        <span class="dropdown-item">Fabrika İlaçlama</span>
+                        <span class="dropdown-item">Restorant İlaçlama</span>
+                        <span class="dropdown-header">Danışmanlık Hizmetleri</span>
+                        <span class="dropdown-item">Ruhsat İşlemleri (GSM-SM)</span>
+                        <span class="dropdown-item">İşletme Kayıt İşlemleri (Tarım ve Orman Bakanlığı)</span>
+                        <span class="dropdown-item">Kapasite Raporları</span>
+                        <span class="dropdown-item">HACCP Sistem Kurulumu</span>
+                        <span class="dropdown-item">Tarım ve Orman Bakanlığı Projeleri</span>
+                        <span class="dropdown-item">Bahçe Tesis ve Bakım İşlemleri</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Talep Formu Hazırla
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <app-talep-formu></app-talep-formu>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid" style="height:475px">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="container-fluid" style="height: 80px; background-color: coral">
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" routerLink="zararlilar">Zararlılar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" routerLink="referanslar">Referanslarımız</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" routerLink="ilaclama-yontemleri">İlaçlama Yöntemleri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" routerLink="galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" routerLink="iletisim">İletişim</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="page-footer font-small unique-color-dark">
+    <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Zm Danışmanlık</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>İlaçlama ve Danışmanlık Hizmetleri vermekteyiz. </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase font-weight-bold">İletİşİm</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> Molla Gürani Mah. Uygar Sk. No:32/1 Fatih/İSTANBUL</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> info@zmdanismanlik.com</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> 0 212 532 32 05</p>
+                <p>
+                    <i class="fas fa-mobile-alt mr-3"></i> 0 532 520 22 76</p>
+            </div>
+        </div>
+    </div>
+</footer>
