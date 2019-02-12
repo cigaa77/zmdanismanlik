@@ -1,111 +1,111 @@
-<div class="container-fluid" style="background-color:rosybrown">
-    <div class="container nav" style="background-color:darksalmon">
-        <div>
+<!-- Sayfa Başı  -->
+<div class="container-fluid" id="head-1">
+    <div class="container nav text-white" style="height:40px">
+        <div class="mt-2">
             <span class="fas fa-phone-volume"></span>
-            <span class="p-1">0 212 532 32 05</span>
+            <span class="p-2">0 212 532 32 05</span>
         </div>
-        <div>
+        <div class="mt-2">
             <span class="fas fa-envelope ml-4"></span>
-            <span class="p-1">info@zmdanismanlik.com</span>
+            <span class="p-2">info@zmdanismanlik.com</span>
         </div>
     </div>
 </div>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand">Zm Danışmanlık</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" routerLink="anasayfa">Anasayfa</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Hakkımızda
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" routerLink="kalite-politikası">Kalite Politikası</a>
-                        <a class="dropdown-item" routerLink="yonetmelikler">Yönetmelikler</a>
-                        <a class="dropdown-item" routerLink="belgelerimiz">Belgelerimiz</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Hizmetlerimiz
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <span class="dropdown-header">İlaçlama, Haşere ve Kemirgen
-                            Hizmetleri</span>
-                        <span class="dropdown-item">Açık Alan ve Bahçe İlaçlama</span>
-                        <span class="dropdown-item">Ev İlaçlama</span>
-                        <span class="dropdown-item">Otel İlaçlama</span>
-                        <span class="dropdown-item">Hastane İlaçlama</span>
-                        <span class="dropdown-item">İşyeri-Şirket-Ofis İlaçlama</span>
-                        <span class="dropdown-item">Fabrika İlaçlama</span>
-                        <span class="dropdown-item">Restorant İlaçlama</span>
-                        <span class="dropdown-header">Danışmanlık Hizmetleri</span>
-                        <span class="dropdown-item">Ruhsat İşlemleri (GSM-SM)</span>
-                        <span class="dropdown-item">İşletme Kayıt İşlemleri (Tarım ve Orman Bakanlığı)</span>
-                        <span class="dropdown-item">Kapasite Raporları</span>
-                        <span class="dropdown-item">HACCP Sistem Kurulumu</span>
-                        <span class="dropdown-item">Tarım ve Orman Bakanlığı Projeleri</span>
-                        <span class="dropdown-item">Bahçe Tesis ve Bakım İşlemleri</span>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Talep Formu Hazırla
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <app-talep-formu></app-talep-formu>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<div class="container-fluid" style="height:475px">
-    <router-outlet></router-outlet>
-</div>
-
-<div class="container-fluid" style="height: 80px; background-color: coral">
-    <div class="container">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link btn btn-primary" routerLink="zararlilar">Zararlılar</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar-tepe">
+    <span class="navbar-brand">
+        <img src="../assets/ZmDanışmanlık2.png" width="200" height="50" alt="Zm Danışmanlık">
+    </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item text-center">
+                <a class="nav-link" routerLink="anasayfa">
+                    <i class="fas fa-home"></i><br>
+                    <strong>Anasayfa</strong>
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-primary" routerLink="referanslar">Referanslarımız</a>
+            <li class="nav-item dropdown text-center">
+                <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-info"></i><br>
+                    <strong>Hakkımızda</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="kalite-politikası">Kalite Politikası</a>
+                    <a class="dropdown-item" routerLink="yonetmelikler">Yönetmelikler</a>
+                    <a class="dropdown-item" routerLink="belgelerimiz">Belgelerimiz</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-primary" routerLink="ilaclama-yontemleri">İlaçlama Yöntemleri</a>
+            <li class="nav-item dropdown text-center">
+                <a class="nav-link" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-space-shuttle"></i><br>
+                    <strong>Hizmetlerimiz</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <span class="dropdown-header">İlaçlama, Haşere ve Kemirgen
+                        Hizmetleri</span>
+                    <span class="dropdown-item">Açık Alan ve Bahçe İlaçlama</span>
+                    <span class="dropdown-item">Ev İlaçlama</span>
+                    <span class="dropdown-item">Otel İlaçlama</span>
+                    <span class="dropdown-item">Hastane İlaçlama</span>
+                    <span class="dropdown-item">İşyeri-Şirket-Ofis İlaçlama</span>
+                    <span class="dropdown-item">Fabrika İlaçlama</span>
+                    <span class="dropdown-item">Restorant İlaçlama</span>
+                    <span class="dropdown-header">Danışmanlık Hizmetleri</span>
+                    <span class="dropdown-item">Ruhsat İşlemleri (GSM-SM)</span>
+                    <span class="dropdown-item">İşletme Kayıt İşlemleri (Tarım ve Orman Bakanlığı)</span>
+                    <span class="dropdown-item">Kapasite Raporları</span>
+                    <span class="dropdown-item">HACCP Sistem Kurulumu</span>
+                    <span class="dropdown-item">Tarım ve Orman Bakanlığı Projeleri</span>
+                    <span class="dropdown-item">Bahçe Tesis ve Bakım İşlemleri</span>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-primary" routerLink="galeri">Galeri</a>
+            <li class="nav-item text-center">
+                <a class="nav-link" routerLink="referanslar">
+                    <i class="fas fa-handshake"></i><br>
+                    <strong>Referanslarımız</strong>
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-primary" routerLink="iletisim">İletişim</a>
+            <li class="nav-item text-center">
+                <a class="nav-link" routerLink="iletisim">
+                    <i class="fas fa-address-card"></i><br>
+                    <strong>İletişim</strong>
+                </a>
+            </li>
+            <li class="nav-item dropdown text-center">
+                <a class="nav-link" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fab fa-wpforms"></i><br>
+                    <strong>Talep Formu Hazırla</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <app-talep-formu></app-talep-formu>
+                </div>
             </li>
         </ul>
     </div>
+</nav>
+<!-- Router Alanı -->
+<div class="mw-100" id="routerDiv-1">
+    <router-outlet></router-outlet>
 </div>
+<!-- Alt Menu -->
+<app-yan-menu></app-yan-menu>
+<!-- Footer Bölümü -->
 <footer class="page-footer font-small unique-color-dark">
-    <div class="container text-center text-md-left mt-5">
-        <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-3 text-white">
                 <h6 class="text-uppercase font-weight-bold">Zm Danışmanlık</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>İlaçlama ve Danışmanlık Hizmetleri vermekteyiz. </p>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-3 text-white">
                 <h6 class="text-uppercase font-weight-bold">İletİşİm</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>

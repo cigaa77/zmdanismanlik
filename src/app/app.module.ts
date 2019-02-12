@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RouterModule, Routes } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { KaliteHizmetleriComponent } from './kalite-hizmetleri/kalite-hizmetleri.component';
 import { BelgelerimizComponent } from './belgelerimiz/belgelerimiz.component';
@@ -11,9 +13,9 @@ import { GaleriComponent } from './galeri/galeri.component';
 import { IletisimComponent } from './iletisim/iletisim.component';
 import { HizmetlerimizComponent } from './hizmetlerimiz/hizmetlerimiz.component';
 import { ReferanslarComponent } from './referanslar/referanslar.component';
-import { RouterModule, Routes } from '@angular/router';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { YonetmeliklerComponent } from './yonetmelikler/yonetmelikler.component';
+import { YanMenuComponent } from './yan-menu/yan-menu.component';
 
 const appRoutes: Routes = [
   { path: 'anasayfa', component: AnasayfaComponent },
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     HizmetlerimizComponent,
     ReferanslarComponent,
     AnasayfaComponent,
-    YonetmeliklerComponent
+    YonetmeliklerComponent,
+    YanMenuComponent
   ],
   imports: [
     BrowserModule,
