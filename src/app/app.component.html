@@ -22,60 +22,74 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
+            <!-- Anasayfa -->
             <li class="nav-item text-center">
                 <a class="nav-link" routerLink="anasayfa">
                     <i class="fas fa-home"></i><br>
                     <strong>Anasayfa</strong>
                 </a>
             </li>
-            <li class="nav-item dropdown text-center">
+            <!-- Hakkımızda -->
+            <li class="nav-item text-center">
                 <a class="nav-link" routerLink="hakkimizda">
                     <i class="fas fa-info"></i><br>
                     <strong>Hakkımızda</strong>
                 </a>
             </li>
-            <li class="nav-item dropdown text-center">
+            <!-- Hizmetlerimiz -->
+            <li class="nav-item dropdown text-center ">
                 <a class="nav-link" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
+                aria-expanded="false">
                     <i class="fas fa-space-shuttle"></i><br>
                     <strong>Hizmetlerimiz</strong>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                    <span class="dropdown-header">İlaçlama, Haşere ve Kemirgen
-                        Hizmetleri</span>
-                    <span class="dropdown-item">Açık Alan ve Bahçe İlaçlama</span>
-                    <span class="dropdown-item">Ev İlaçlama</span>
-                    <span class="dropdown-item">Otel İlaçlama</span>
-                    <span class="dropdown-item">Hastane İlaçlama</span>
-                    <span class="dropdown-item">İşyeri-Şirket-Ofis İlaçlama</span>
-                    <span class="dropdown-item">Fabrika İlaçlama</span>
-                    <span class="dropdown-item">Restorant İlaçlama</span>
-                    <span class="dropdown-header">Danışmanlık Hizmetleri</span>
-                    <span class="dropdown-item">Ruhsat İşlemleri (GSM-SM)</span>
-                    <span class="dropdown-item">İşletme Kayıt İşlemleri (Tarım ve Orman Bakanlığı)</span>
-                    <span class="dropdown-item">Kapasite Raporları</span>
-                    <span class="dropdown-item">HACCP Sistem Kurulumu</span>
-                    <span class="dropdown-item">Tarım ve Orman Bakanlığı Projeleri</span>
-                    <span class="dropdown-item">Bahçe Tesis ve Bakım İşlemleri</span>
-                </div>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-item">
+                        <a>İlaçlama, Haşere ve Kemirgen Hizmetleri</a>
+                        <ul class="dropdown-menu sub-menu">
+                            <span class="dropdown-item">Açık Alan ve Bahçe İlaçlama</span>
+                            <span class="dropdown-item">Ev İlaçlama</span>
+                            <span class="dropdown-item">Otel İlaçlama</span>
+                            <span class="dropdown-item">Hastane İlaçlama</span>
+                            <span class="dropdown-item">İşyeri-Şirket-Ofis İlaçlama</span>
+                            <span class="dropdown-item">Fabrika İlaçlama</span>
+                            <span class="dropdown-item">Restorant İlaçlama</span>
+                        </ul>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="dropdown-item">
+                        <a>Danışmanlık Hizmetleri</a>
+                        <ul class="dropdown-menu sub-menu">
+                            <span class="dropdown-item">Ruhsat İşlemleri (GSM-SM)</span>
+                            <span class="dropdown-item">İşletme Kayıt İşlemleri (Tarım ve Orman Bakanlığı)</span>
+                            <span class="dropdown-item">Kapasite Raporları</span>
+                            <span class="dropdown-item">HACCP Sistem Kurulumu</span>
+                            <span class="dropdown-item">Tarım ve Orman Bakanlığı Projeleri</span>
+                            <span class="dropdown-item">Bahçe Tesis ve Bakım İşlemleri</span>
+                        </ul>
+                    </li>
+                </ul>
             </li>
-            <li class="nav-item text-center">
+            <!-- Referanslarımız -->
+            <!-- <li class="nav-item text-center">
                 <a class="nav-link" routerLink="referanslar">
                     <i class="fas fa-handshake"></i><br>
                     <strong>Referanslarımız</strong>
                 </a>
-            </li>
+            </li> -->
+            <!-- İletişim -->
             <li class="nav-item text-center">
                 <a class="nav-link" routerLink="iletisim">
                     <i class="fas fa-address-card"></i><br>
                     <strong>İletişim</strong>
                 </a>
             </li>
+            <!-- Talep Formu -->
             <li class="nav-item dropdown text-center">
                 <a class="nav-link" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                     <i class="fab fa-wpforms"></i><br>
-                    <strong>Talep Formu Hazırla</strong>
+                    <strong>Talep Formu</strong>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                     <app-talep-formu></app-talep-formu>
