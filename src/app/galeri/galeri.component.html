@@ -1,3 +1,6 @@
-<p>
-  galeri works!
-</p>
+<div style="margin-left:65px">
+  <div class="gallery" *ngFor="let image of _albums; let i=index">
+    <img [src]="image.thumb" (click)="open(i)" />
+    <!-- <div class="desc">Add a description of the image here</div> -->
+  </div>
+</div>

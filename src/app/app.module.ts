@@ -13,6 +13,7 @@ import { ReferanslarComponent } from './referanslar/referanslar.component';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { YanMenuComponent } from './yan-menu/yan-menu.component';
 import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 const appRoutes: Routes = [
   { path: 'anasayfa', component: AnasayfaComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
