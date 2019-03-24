@@ -12,8 +12,10 @@
 }
 #routerDiv-1{
     height:475px;
-    background-color:grey;
-    overflow-y: scroll;
+    background-image: url("../assets/BackGround/2.jpg");
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
 }   
 
 .dropdown-menu .sub-menu {

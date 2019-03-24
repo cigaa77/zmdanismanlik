@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox } from 'ngx-lightbox';
 
+
 @Component({
   selector: 'app-galeri',
   templateUrl: './galeri.component.html',
@@ -13,10 +14,10 @@ export class GaleriComponent implements OnInit {
   }
 
   constructor(private _lightbox: Lightbox) {
-    for (let i = 1; i <= 21; i++) {
-      const src = '../../assets/image' + i + '.jpg';
-      const caption = 'Image ' + i + ' caption here';
-      const thumb = '../../assets/image' + i + '_tn.jpg';
+    for (let i = 1; i <= 17; i++) {
+      const src ='../../assets/Galeri/' + i + '.jpg';
+      const caption = "Manzara "+i;
+      const thumb = '../../assets/Galeri/' + i + '_tn.jpg';
       const album = {
         src: src,
         caption: caption,
