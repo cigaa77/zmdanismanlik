@@ -1,9 +1,9 @@
-<div style="text-align:right; margin-top: 10px; margin-bottom: 15px; margin-right: 45px; font-family: Verdana, Geneva, sans-serif;">
-    <h3>GALERİ</h3>
-    <hr>
-  </div>
-<div style="margin-left:65px">
-  <div class="gallery" *ngFor="let image of _albums; let i=index">
-    <img [src]="image.thumb" (click)="open(i)" />
-  </div>
+<div
+  style="text-align:right; padding-top: 10px; margin-bottom: 15px; margin-right: 45px; font-family: Verdana, Geneva, sans-serif;">
+  <h3>GALERİ</h3>
+  <hr>
 </div>
+<div style="padding-left:65px; padding-right:35px">
+  <div class="gallery" style="display: inline-block" *ngFor="let image of _albums; let i=index">
+    <img  [src]="image.thumb" (click)="open(i)" />
+  </div>
