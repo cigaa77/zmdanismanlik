@@ -12,6 +12,7 @@ import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { YanMenuComponent } from './yan-menu/yan-menu.component';
 import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const appRoutes: Routes = [
   { path: 'anasayfa', component: AnasayfaComponent },
@@ -37,10 +38,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     LightboxModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,7 +8,7 @@ import { Lightbox } from 'ngx-lightbox';
   styleUrls: ['./galeri.component.css']
 })
 export class GaleriComponent implements OnInit {
-  private _albums: Array<{ src: string, caption: string, thumb: string }> = [];
+  public _albums: Array<{ src: string, caption: string, thumb: string }> = [];
 
   ngOnInit() {
   }
